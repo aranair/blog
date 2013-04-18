@@ -3,6 +3,9 @@ h1, h2, h3, h4, h5 {
     font-family:'Oswald', Arial, Helvetica, serif !important;
     font-weight:300 !important;
 }
+body {
+    background: url(images/homepage/bg-texture.jpg);
+}
 
 .clear {
     clear:both;
@@ -50,6 +53,7 @@ span.fontsmall {
         line-height:75px; 
         padding-bottom:30px;
         font-weight:400 !important;
+        text-shadow: 0 2px #fff;
     }
 
     #left_explanatory {
