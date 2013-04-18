@@ -1,0 +1,9 @@
+<div class="s_article_container">
+    <div class="s_article_inner">
+        <a href=<%= article_path(@article)%> class="post_link" ><h3 class="article_title"><%= @article.title %></h3></a>
+        <p class="article_time muted"><%= @article.created_at.strftime("%B %d at %I:%M %p") %></p>
+        <p class="article_content"><%= raw(@article.body) %></p>
+        <p class="article_tags"><span class="muted">Tags: </span><%= raw @article.tags.map(&:name).map { |t| link_to t, tag_path(t) }.join(', ') %></p>
+    </div>
+</div>
+
