@@ -10,15 +10,15 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
-  = javascript_include_tag 'ckeditor/init'
 </head>
 <body>
 <%= render 'shared/top_panel'%>
+<div id="mid_coloring"></div>
+
 <div id="fluid_container" class="container-fluid">
-    
     <div id="left_container">
         <div id ="superheader_container"> 
-            <h1 id="superheader"><span class="accent_orange">HOMAN</span><br> 
+            <h1 id="superheader"><a href=<%= root_path %> class="accent_orange"><span class="accent_orange">HOMAN</span></a><br> 
             <span class="fontlight fontsmall">VIM / RAILS</span></h1>
         </div>
         <div id="left_expl_container">
@@ -28,22 +28,27 @@
         </div>
         <div class="clear"></div>
         <div id="left_tagcloud_container">
-          <h4 class="muted"> Tag Cloud: </h4>
-          <div id="tag_cloud">
-              <% tag_cloud Article.tag_counts, %w{s m l} do |tag, css_class| %>
-              <%= link_to tag.name, tag_path(tag.name), class: css_class, :style => 'color:#999999' %>
-              <%end%>
-          </div> 
-          <br />
+            <div id="left_tagcloud">
+              <h4 class="muted"> Tag Cloud: </h4>
+              <div id="tag_cloud">
+                  <% tag_cloud Article.tag_counts, %w{s m l} do |tag, css_class| %>
+                  <%= link_to tag.name, tag_path(tag.name), class: css_class, :style => 'color:#999999' %>
+                  <%end%>
+              </div> 
+              <br />
+              <h4 class="muted">Todos: <br>Search, Date filter .. </h4>
+            </div>
         </div>
+        <div class="clear"></div>
     </div>
+    
     <div id="mid_container" class="">
         <div id="mid_inner">  
             <%= yield %>
         </div>
     </div>
-</div>
 
+</div>
 
 </body>
 </html>
