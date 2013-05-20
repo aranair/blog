@@ -5,5 +5,7 @@
         <p class="article_content"><%= raw(@article.body) %></p>
         <p class="article_tags"><span class="muted">Tags: </span><%= raw @article.tags.map(&:name).map { |t| link_to t, tag_path(t) }.join(', ') %></p>
     </div>
+    <%# testing comments %>
+    <%# another line %>
 </div>
 
