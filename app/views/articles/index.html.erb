@@ -7,7 +7,7 @@
          <div class="s_article_inner">
             <h3 class="article_title"><%= article.title %></h3>
             <p class="article_time muted"><%= article.created_at.in_time_zone('Kuala Lumpur').strftime("%B %d at %I:%M %p") %></p>
-            <p class="article_content"><%= raw(article.body).truncate(300) %></p>
+            <p class="article_content"><%= raw(article.body) %></p>
             <p class="article_tags"><span class="muted">Tags: <%= raw article.tags.map(&:name).map { |t| link_to t, tag_path(t) , :class=>'muted'}.join(', ') %></span></p>
         </div>
     </div>
