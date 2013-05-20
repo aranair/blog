@@ -4,7 +4,7 @@ h1, h2, h3, h4, h5 {
     font-weight:300 !important;
 }
 body {
-    background: url(/assets/bg-texture.jpg);
+    background: asset-url('bg-texture.jpg', image);
 }
 
 .clear {
