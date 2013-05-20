@@ -1,14 +1,14 @@
 source 'https://rubygems.org'
 ruby "1.9.3"
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.0.rc1'
+gem 'rails', '~> 4.0.0.rc1'
 
 
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails',   '~> 4.0.0.beta1'
-  gem 'coffee-rails', '~> 4.0.0.beta1'
+  gem 'sass-rails',   '~> 4.0.0.rc1'
+  gem 'coffee-rails', '~> 4.0.0.rc1'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', platforms: :ruby
@@ -26,7 +26,7 @@ end
 # gem 'turbolinks'
 
 gem 'ckeditor'
-gem 'devise'
+gem 'devise', '~> 3.0.0.rc'
 gem 'pg'
 gem 'twitter-bootstrap-rails'
 
