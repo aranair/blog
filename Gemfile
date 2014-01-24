@@ -1,31 +1,21 @@
 source 'https://rubygems.org'
-ruby "1.9.3"
-# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 4.0.0.rc1'
+ruby "2.1.0"
+gem 'rails', '~> 4.0.2'
 
-
-# Gems used only for assets and not required
-# in production environments by default.
-group :assets do
-  gem 'sass-rails',   '~> 4.0.0.rc1'
-  gem 'coffee-rails', '~> 4.0.0.rc1'
-
-  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  # gem 'therubyracer', platforms: :ruby
-
-  gem 'uglifier', '>= 1.0.3'
-end
+gem "compass-rails", "~> 1.1.2"
+gem 'sass-rails', '~> 4.0.0'
+gem 'coffee-rails', '~> 4.0.0'
+gem 'uglifier', '>= 1.3.0'
+gem 'redcarpet'
 
 gem 'jquery-rails'
 
-group :production do 
-  gem 'rails_log_stdout',           github: 'heroku/rails_log_stdout'
-  gem 'rails3_serve_static_assets', github: 'heroku/rails3_serve_static_assets'
-end
-# Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-# gem 'turbolinks'
+# group :production do 
+  # gem 'rails_log_stdout',           github: 'heroku/rails_log_stdout'
+  # gem 'rails3_serve_static_assets', github: 'heroku/rails3_serve_static_assets'
+# end
 
-gem 'ckeditor'
+# gem 'ckeditor'
 gem 'devise', '~> 3.0.0.rc'
 gem 'pg'
 gem 'twitter-bootstrap-rails'
@@ -39,6 +29,7 @@ group :test do
   gem "capybara"
   gem "guard-rspec"
 end
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
