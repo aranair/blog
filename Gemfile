@@ -18,7 +18,6 @@ gem 'jquery-rails'
 # gem 'ckeditor'
 gem 'devise', '~> 3.0.0.rc'
 gem 'pg'
-gem 'twitter-bootstrap-rails'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.0.1'

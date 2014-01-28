@@ -3,20 +3,11 @@
 //  You can use CoffeeScript in this file: http://coffeescript.org/
 
 $(document).ready(function() {
-  // var options = {
-  //   editor: document.getElementById('pen_editor'), // {DOM Element} [required]
-  //   debug: true, // {Boolean} false by default
-  //   textarea: '<textarea name="content"></textarea>', // fallback for old browsers
-  //   list: [ 'blockquote', 'h2', 'h3', 'p', 'insertorderedlist', 'insertunorderedlist',
-  //   'indent', 'outdent', 'bold', 'italic', 'underline', 'createlink'],
-  // }
-  // var editor = new Pen(options);
-
   var opts = {
   container: 'epiceditor_container',
   textarea: 'epiceditor_textarea',
   basePath: '/assets/epiceditor',
-  clientSideStorage: true,
+  clientSideStorage: false,
   useNativeFullscreen: false,
   theme: {
     base: '/themes/base/epiceditor.css',

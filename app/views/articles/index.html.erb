@@ -1,19 +1,18 @@
 <p id="notice"><%= notice %></p>
 <div id="articles_container">
   <% @articles.each do |article| %>
-    <a href=<%= article_path(article)%> class="article_block_link" >
-      <div class="s_article_container">
-        <div class="s_article_inner">
-          <h3 class="article_title"><%= article.title %></h3>
-          <p class="article_time muted"><%= article.created_at.in_time_zone('Singapore').strftime("%B %d at %I:%M %p") %></p>
-          <p class="article_content"> <%= markdown article.body %> </p>
-          <p class="article_tags">
-          <span class="muted">
-            Tags: <%= raw article.tags.map(&:name).map { |t| link_to t, tag_path(t) , :class=>'muted' }.join(', ') %>
-          </span>
-          </p>
-        </div>
-      </div>
-    </a>
+    <div class="s_article_container">
+      <a href=<%= article_path(article) %> class="article_link">
+        <h3 class="article_title"><%= article.title %></h3>
+      </a>
+      <p class="article_time muted"><%= article.created_at.in_time_zone('Singapore').strftime("%B %d at %I:%M %p") %></p>
+      <p class="article_content"> <%= markdown article.body %> </p>
+      <p class="article_tags">
+      <span class="muted">
+        Tags: <%= raw article.tags.map(&:name).map { |t| link_to t, tag_path(t) , :class=>'muted' }.join(', ') %>
+      </span>
+      </p>
+      <%= link_to 'Edit this post', edit_article_path(article), :class=>'muted' %> &nbsp;
+    </div>
   <% end %>
 </div>

@@ -1,4 +1,3 @@
-<br>
 <%= form_for @article do |f| %>
   <% if @article.errors.any? %>
     <div id="error_explanation">
@@ -17,7 +16,7 @@
   <div class="field" id="epiceditor_container">
   </div>
   <div class="field hidden">
-    <%= f.text_area :body, placeholder: 'Content', style: 'width:500px;', :id => 'epiceditor_textarea' %>
+    <%= f.text_area :body, placeholder: 'Content', :id => 'epiceditor_textarea' %>
   </div>
   <div id="epiceditor">
   </div>
@@ -26,6 +25,6 @@
     <%= f.text_field :tag_list %>
   </div>
   <div class="actions">
-    <%= f.submit 'Save', :class =>"btn btn-primary" %>
+    <%= f.submit 'Save', :class =>"btn btn-default" %>
   </div>
 <% end %>
