@@ -1,4 +1,8 @@
-<p id="notice"><%= notice %></p>
+<% if notice.present? %>
+  <div class="alert alert-info alert-dismissable"><%= notice %>
+  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+</div>
+<% end %>
 <div id="articles_container">
   <% @articles.each do |article| %>
     <div class="s_article_container">

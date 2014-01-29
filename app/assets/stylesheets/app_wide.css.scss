@@ -3,6 +3,7 @@ h1, h2, h3, h4, h5 {
   font-family:'Oswald', Arial, Helvetica, serif !important;
   font-weight:300 !important;
 }
+
 body {
   background: url(image_path('bg-texture.jpg'));
   padding-top: 50px;
@@ -29,7 +30,6 @@ span.fontlight {
 span.fontsmaller {
   font-size:0.5em
 }
-
 
 span.fontsmall {
   font-size:0.9em
@@ -100,6 +100,7 @@ span.fontsmall {
   margin-left:27%;
   padding-top:25px;
   padding-bottom:30px;
+  max-width:1000px;
 }
 #top_container {
   position:fixed;
@@ -115,46 +116,6 @@ h3.article_title {
   font-size:27px;
   line-height:27px;
   font-weight:300;
-}
-@media (max-width: 1020px) { 
-  p {
-    font-size:16px;
-  }
-  #left_container {
-    display:block;
-    width:300px;
-    margin:auto;
-    top:0px;
-    position:relative;
-    padding:none;
-    text-align:center;
-    border-right:0px;
-    padding-bottom:35px;
-
-    h1#superheader {
-      font-family:'Oswald', Arial, Helvetica, serif;
-      font-size:55px;
-      line-height:55px; 
-      padding-bottom:30px;
-    }
-
-    #superheader_container {
-      text-align:center;
-    }
-    #left_expl_container {
-      text-align:center;
-    }
-    #left_explanatory {
-      max-width:300px;
-      margin:auto;
-    }
-  }
-
-  #mid_container {
-    margin-left:0px;
-    max-width:1000px;
-    border:0px;
-  }
 }
 a.article_block_link {
   color:#333;

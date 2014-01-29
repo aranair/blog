@@ -1,4 +1,42 @@
 
+@media (max-width: 1020px) { 
+  #mid_container {
+    margin-left:0px;
+  }
+  p {
+    font-size:16px;
+  }
+  #left_container {
+    display:block;
+    width:300px;
+    margin:auto;
+    top:0px;
+    position:relative;
+    padding:none;
+    text-align:center;
+    border-right:0px;
+    padding-bottom:35px;
+
+    h1#superheader {
+      font-family:'Oswald', Arial, Helvetica, serif;
+      font-size:55px;
+      line-height:55px; 
+      padding-bottom:30px;
+    }
+
+    #superheader_container {
+      text-align:center;
+    }
+    #left_expl_container {
+      text-align:center;
+    }
+    #left_explanatory {
+      max-width:300px;
+      margin:auto;
+    }
+  }
+}
+
 /* Large desktop */
 @media (min-width: 1200px) {
 }
@@ -14,6 +52,10 @@
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
+  .s_article_container {
+    padding:10px;
+    padding-top:0px;
+  }
 }
 
 /* Landscape phones and down */
