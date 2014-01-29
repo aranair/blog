@@ -5,6 +5,7 @@ h1, h2, h3, h4, h5 {
 }
 body {
   background: url(image_path('bg-texture.jpg'));
+  padding-top: 50px;
 }
 .btn {border-radius: 0;}
 .clear {
@@ -40,12 +41,8 @@ span.fontsmall {
 }
 #left_container {
   position:fixed;
-  width:24%;
   bottom:0px;
   top:60px;
-  min-width:200px;
-  padding-right:20px;
-  padding-top:35px;
 
   h1#superheader {
     font-size:65px;
@@ -172,6 +169,7 @@ a.article_block_link:hover {
   z-index:0;
   border-bottom:1px solid #e7e7e7;
   padding:30px;
+  padding-top:0px;
 
   a.article_link {
     // color:rgb(50, 124, 203);
