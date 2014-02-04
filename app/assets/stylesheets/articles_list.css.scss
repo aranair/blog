@@ -1,0 +1,42 @@
+
+.articles-list {
+  display:block;
+  padding-left:0px;
+}
+li.article-list-item {
+  position: relative;
+  display:block;
+  z-index:0;
+  border-bottom:1px solid #e7e7e7;
+
+  .article-title {
+    padding-top: 30px;
+    font-family:'Oswald', Arial, Helvetica, serif;
+    font-size:24px;
+    line-height:27px;
+    font-weight:300;
+    color:#333;
+  }
+  a.article-list-edit {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    width: 100px;
+    text-align: center;
+    height:100%;
+    line-height: 100px;
+    // &:hover { background: rgba(41, 185, 250, 0.1); }
+    &:hover { border-left: 1px solid #e7e7e7; background:rgba(255, 255, 255, 0.80); }
+  }
+  a.article-link {
+    display: block;
+    padding:0px 80px 25px 35px;
+  }   
+  a.article-link:hover {
+    background:rgba(255, 255, 255, 0.80);
+    text-decoration: none;
+    .article-title { text-decoration: underline; }
+  }
+  a.article-link:hover >.article-time { color: #777; text-decoration: none; }
+}

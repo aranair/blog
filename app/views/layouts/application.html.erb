@@ -15,12 +15,10 @@
 </head>
 <body>
 <%= render 'shared/top_panel'%>
-<div class="outermost_container">
+<div class="outermost_container row">
     <%= render 'shared/side_panel' %>
     <div id="mid_container" class="col-md-5 col-xs-12">
-        <div id="mid_inner">  
-            <%= yield %>
-        </div>
+      <%= yield %>
     </div>
 
 </div>

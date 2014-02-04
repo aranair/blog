@@ -8,32 +8,15 @@ body {
   background: url(image_path('bg-texture.jpg'));
   padding-top: 50px;
 }
-.btn {border-radius: 0;}
-.clear {
-  clear:both;
-}
-.accent_orange {
-  color:rgb(248, 127, 46);
-}
-
-.accent_skyblue {
-  color:rgb(50, 124, 203);
-}
-.accent_black {
-  color:black;
-}
-
-span.fontlight {
-  font-weight:300;
-}
-
-span.fontsmaller {
-  font-size:0.5em
-}
-
-span.fontsmall {
-  font-size:0.9em
-}
+.btn { border-radius: 0; }
+.clear { clear:both; }
+.muted { color: #999; }
+.accent_orange { color:rgb(248, 127, 46); }
+.accent_skyblue { color:rgb(50, 124, 203); }
+.accent_black { color:black; }
+span.fontlight { font-weight:300; }
+span.fontsmaller { font-size:0.5em; }
+span.fontsmall { font-size:0.9em }
 
 #epiceditor_container {
   min-height:400px;
@@ -98,10 +81,10 @@ span.fontsmall {
   border:1px solid #e7e7e7;
   display:block;
   margin-left:27%;
-  padding-top:25px;
-  padding-bottom:30px;
   max-width:1000px;
+  padding:0px;
 }
+
 #top_container {
   position:fixed;
   height:25px;
@@ -111,38 +94,8 @@ span.fontsmall {
   background:white;  
   z-index:3;
 }
-h3.article_title {
-  font-family:'Oswald', Arial, Helvetica, serif;
-  font-size:27px;
-  line-height:27px;
-  font-weight:300;
-}
-a.article_block_link {
-  color:#333;
-}
-a.article_block_link:hover {
-  color:#333;
-  text-decoration:none;
-}
-.s_article_container {
-  display:block;
-  z-index:0;
-  border-bottom:1px solid #e7e7e7;
-  padding:30px;
-  padding-top:0px;
 
-  a.article_link {
-    // color:rgb(50, 124, 203);
-  }   
-  a.article_link:hover {
-    // color:#333;
-    text-decoration:none;
+.devise-login {
+  .new_user input{
   }
-
-}
-.s_article_container:hover {
-  // background:rgba(41, 185, 250, 0.21);
-}
-.s_article_container.non_hover:hover {
-  background: none;
 }

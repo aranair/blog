@@ -1,12 +1,9 @@
-<div class="s_article_container non_hover">
-  <div class="s_article_inner">
-    <a href=<%= article_path(@article)%> class="post_link" ><h3 class="article_title"><%= @article.title %></h3></a>
-    <p class="article_time muted"><%= @article.created_at.in_time_zone('Singapore').strftime("%B %d at %I:%M %p") %></p>
-    <%# <p id="pen_editor" class="article_content"><%= raw(@article.body) %1></p> %>
-    <p> <%= markdown @article.body %> </p>
-    <p class="article_tags">
-    <span class="muted">Tags: </span><%= raw @article.tags.map(&:name).map { |t| link_to t, tag_path(t) }.join(', ') %>
-    </p>
-  </div>
+<div class="article-content col-sm-12">
+  <h1 class="article-title"><%= @article.title %></h1>
+  <p class="article-time muted"><%= @article.created_at.in_time_zone('Singapore').strftime("%B %d at %I:%M %p") %></p>
+  <%# <p id="pen_editor" class="article_content"><%= raw(@article.body) %1></p> %>
+  <p> <%= markdown @article.body %> </p>
 </div>
-
+<div class="article-tags col-sm-12">
+  <span class="muted">Tags: </span><%= raw @article.tags.map(&:name).map { |t| link_to t, tag_path(t) }.join(', ') %>
+</div>

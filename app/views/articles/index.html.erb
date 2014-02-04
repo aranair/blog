@@ -3,20 +3,18 @@
   <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
 </div>
 <% end %>
-<div id="articles_container">
+<ul class="articles-list">
   <% @articles.each do |article| %>
-    <div class="s_article_container">
-      <a href=<%= article_path(article) %> class="article_link">
-        <h3 class="article_title"><%= article.title %></h3>
+    <li class="article-list-item">
+      <a href=<%= article_path(article) %> class="article-link">
+        <p class="article-title"><%= article.title %></p>
+        <span class="article-time muted"><%= article.created_at.in_time_zone('Singapore').strftime("%B %d at %I:%M %p") %></span>
       </a>
-      <p class="article_time muted"><%= article.created_at.in_time_zone('Singapore').strftime("%B %d at %I:%M %p") %></p>
-      <p class="article_content"> <%= markdown article.body %> </p>
-      <p class="article_tags">
-      <span class="muted">
-        Tags: <%= raw article.tags.map(&:name).map { |t| link_to t, tag_path(t) , :class=>'muted' }.join(', ') %>
-      </span>
-      </p>
-      <%= link_to 'Edit this post', edit_article_path(article), :class=>'muted' %> &nbsp;
-    </div>
+      <% if user_signed_in? %>
+        <a href=<%= edit_article_path(article) %> class="article-list-edit">
+          <span>Edit</span>
+        </a>
+      <% end %>
+    </li>
   <% end %>
-</div>
+</ul>
