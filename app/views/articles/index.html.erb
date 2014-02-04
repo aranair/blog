@@ -8,7 +8,7 @@
     <li class="article-list-item">
       <a href=<%= article_path(article) %> class="article-link">
         <p class="article-title"><%= article.title %></p>
-        <span class="article-time muted"><%= article.created_at.in_time_zone('Singapore').strftime("%B %d at %I:%M %p") %></span>
+        <p class="article-time muted"><%= article.created_at.in_time_zone('Singapore').strftime("%B %d at %I:%M %p") %></p>
       </a>
       <% if user_signed_in? %>
         <a href=<%= edit_article_path(article) %> class="article-list-edit">

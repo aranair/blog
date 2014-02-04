@@ -5,20 +5,20 @@
     </div>
     <div id="left_expl_container">
         <div id="left_explanatory">
-            A personal log of my technical lessons with VIM and Rails.
+            A personal log of my lessons and experience with VIM, Rails, and all things technical and fun.
             </div>
     </div>
     <div class="clear"></div>
     <div id="left_tagcloud_container" class="hidden-xs">
         <div id="left_tagcloud">
-          <h4 class="muted"> Tag Cloud: </h4>
+          <h4> Tag Cloud: </h4>
           <div id="tag_cloud">
               <% tag_cloud Article.tag_counts, %w{s m l} do |tag, css_class| %>
               <%= link_to tag.name, tag_path(tag.name), class: css_class, :style => 'color:#999999' %>
               <%end%>
           </div> 
           <br />
-          <h4 class="muted">Todos: <br>Search, Date filter .. </h4>
+          <h4>Todos: <br><span class="muted">search, date filter, <br> comments, statistics .. </span></h4>
         </div>
     </div>
     <div class="clear"></div>
