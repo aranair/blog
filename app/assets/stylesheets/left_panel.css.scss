@@ -1,8 +1,11 @@
 #left_container {
+  background: white;
   position:fixed;
   bottom:0px;
-  top:60px;
-  padding-top:10px;
+  top: 0px;
+  padding-top: 80px;
+  padding-right: 30px;
+  border-right:1px solid #e7e7e7;
 
   h1#superheader {
     color: #8e44ad;

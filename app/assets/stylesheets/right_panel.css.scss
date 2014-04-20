@@ -1,9 +1,12 @@
 #right-panel {
+  background: white;
   position:fixed;
   bottom:0px;
   right: 0px;
-  top:60px;
-  padding-top:10px;
+  top: 0px;
+  padding-top:80px;
+  padding-left: 30px;
+  border-left:1px solid #e7e7e7;
 }
 
 .right-panel__projects-list { 

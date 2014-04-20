@@ -2,40 +2,32 @@
   .s_article_container .article-content .article-title {
     font-size: 25px;
   }
-  #left_tagcloud {
-    text-align: center;
-    float: none;
-    max-width: none;
-  }
   #mid_container {
     margin-left:0px;
+    border-top: 1px solid #e7e7e7;
   }
   p {
     font-size:14px;
   }
   #left_container {
     display:block;
-    width:300px;
+    width:100%;
     margin:auto;
-    top:0px;
     position:relative;
-    padding:none;
+    top: 0px;
+    padding: 0px;
+    padding-top: 10px;
     text-align:center;
     border-right:0px;
     padding-bottom:35px;
 
-    h1#superheader {
-    }
-
     #superheader_container {
       text-align:center;
     }
-    #left_expl_container {
+    #left_expl_container, #left_explanatory {
+      max-width: 300px;
+      margin: auto;
       text-align:center;
-    }
-    #left_explanatory {
-      max-width:300px;
-      margin:auto;
       font-size: 16px;
     }
   }

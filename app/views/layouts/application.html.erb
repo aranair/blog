@@ -19,9 +19,10 @@
   <div class="container-fluid">
     <div class="row">
       <%= render 'shared/left_panel' %>
-      <div id="mid_container_bg" class="col-md-5 col-xs-12"></div>
-      <div id="mid_container" class="col-md-5 col-xs-12">
-        <%= yield %>
+      <div id="mid_container" class="col-md-6 col-xs-12">
+        <div id="mid_container_content">
+          <%= yield %>
+        </div>
       </div>
       <%= render 'shared/right_panel' %>
     </div>
