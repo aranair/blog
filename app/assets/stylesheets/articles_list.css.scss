@@ -10,12 +10,11 @@ li.article-list-item {
   border-bottom:1px solid #e7e7e7;
 
   .article-title {
-    padding-top: 30px;
-    font-family:'Oswald', Arial, Helvetica, serif;
-    font-size:24px;
+    font-family: 'Open Sans', Arial, Helvetica, serif;
+    font-size: 20px;
     line-height:27px;
-    font-weight:300;
-    color:#333;
+    font-weight: 300;
+    color: #9137B6;
   }
   a.article-list-edit {
     position: absolute;
@@ -25,16 +24,20 @@ li.article-list-item {
     width: 100px;
     text-align: center;
     height:100%;
-    line-height: 100px;
+    line-height: 80px;
     // &:hover { background: rgba(41, 185, 250, 0.1); }
-    &:hover { border-left: 1px solid #e7e7e7; background:rgba(255, 255, 255, 0.80); }
+    &:hover { 
+      border-left: 1px solid #e7e7e7; 
+      background:rgba(255, 255, 255, 0.80); 
+    }
   }
   a.article-link {
     display: block;
-    padding:0px 80px 25px 35px;
+    padding:15px 80px 5px 35px;
   }   
   a.article-link:hover {
     background:rgba(255, 255, 255, 0.80);
+    background:white;
     text-decoration: none;
     .article-title { text-decoration: underline; }
   }

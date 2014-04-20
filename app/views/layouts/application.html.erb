@@ -3,25 +3,27 @@
 <head>
   <title>Homan, Keyboards and Vim</title>
   <%= stylesheet_link_tag    "application", media: "all" %>
-  <!-- <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %> -->
+  <%# <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %1> %>
   <%= javascript_include_tag "application"  %>
-  <!-- <%= javascript_include_tag "application", "data-turbolinks-track" => true %> --> 
+  <%# <%= javascript_include_tag "application", "data-turbolinks-track" => true %1> %>
   <%= csrf_meta_tags %>
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
-  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
-  <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600' rel='stylesheet' type='text/css'>
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-<%= render 'shared/top_panel'%>
-<div class="outermost_container row">
-    <%= render 'shared/side_panel' %>
-    <div id="mid_container" class="col-md-5 col-xs-12">
-      <%= yield %>
+  <%= render 'shared/top_panel'%>
+  <div class="container-fluid">
+    <div class="row">
+      <%= render 'shared/left_panel' %>
+      <div id="mid_container" class="col-md-5 col-xs-12">
+        <%= yield %>
+      </div>
+      <%= render 'shared/right_panel'%>
     </div>
-
-</div>
-
+  </div>
 </body>
 </html>

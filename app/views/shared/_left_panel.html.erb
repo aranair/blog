@@ -1,0 +1,28 @@
+<div id="left_container" class="col-md-3">
+    <div id ="superheader_container"> 
+      <h1 id="superheader">
+        <a href=<%= root_path %> class="accent_amethyst">
+          <span class="accent_amethyst">HOMAN</span>
+        </a>
+        <a href="https://github.com/aranair" class="info__github-handle">
+          <span class="fontsmall">@aranair</span>
+        </a>
+    </div>
+    <div id="left_expl_container">
+        <div id="left_explanatory">
+          A personal tech blog of my lessons and experience 
+          with Rails, VIM, Meteor, Ember, yadayada 
+          and all things technical and fun.
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div id="left_tagcloud_container" class="hidden-xs">
+      <div id="left_tagcloud">
+        <p class="tagcloud_header"> Tag Cloud: </p>
+        <% tag_cloud Article.tag_counts, %w{s m l} do |tag, css_class| %>
+          <%= link_to tag.name, tag_path(tag.name), class: css_class, :style => 'color:#999999' %>&nbsp;
+        <%end%>
+      </div>
+    </div>
+    <div class="clear"></div>
+</div>
