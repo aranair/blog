@@ -1,4 +1,4 @@
-<div id="left_container" class="<%= transparency_class %> col-md-3">
+<div id="left_container" class="col-md-3">
     <div id ="superheader_container"> 
       <h1 id="superheader">
         <a href=<%= root_path %> class="accent_amethyst">
@@ -14,7 +14,7 @@
       <%#   </a> %>
       <%# </div> %>
     </div>
-    <div id="left_expl_container">
+    <div id="left_expl_container" class="<%= transparency_class %>">
         <div id="left_explanatory">
           A personal tech blog of my lessons and experience 
           with Rails, VIM, Meteor, Ember, yadayada 
@@ -22,7 +22,7 @@
         </div>
     </div>
     <div class="clear"></div>
-    <div id="left_tagcloud_container" class="hidden-xs">
+    <div id="left_tagcloud_container" class="hidden-xs <%= transparency_class %>">
       <div id="left_tagcloud">
         <p class="tagcloud_header">TAG CLOUD</p>
         <% tag_cloud Article.tag_counts, %w{s m l} do |tag, css_class| %>
