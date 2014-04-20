@@ -1,4 +1,12 @@
 module ApplicationHelper
+  def transparency_class
+    if controller_name == 'articles' and action_name == 'index'
+      ''
+    else
+      'transparent'
+    end
+  end
+
   def tag_cloud(tags, classes)
     max = tags.sort_by(&:count).last
     tags.each do |tag|
@@ -6,6 +14,7 @@ module ApplicationHelper
       yield(tag, classes[index.round])
     end
   end
+
   def markdown(text)
     renderer = Redcarpet::Render::HTML.new(hard_wrap: true, filter_html: true)
     options = {
