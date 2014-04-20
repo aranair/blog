@@ -4,9 +4,15 @@
         <a href=<%= root_path %> class="accent_amethyst">
           <span class="accent_amethyst">HOMAN</span>
         </a>
-        <a href="https://github.com/aranair" class="info__github-handle">
-          <span class="fontsmall">@aranair</span>
-        </a>
+      </h1>
+      <div class="superheader__dev">
+        <span>FULL STACK DEV</span>
+      </div>
+      <%# <div class="superheader__github"> %>
+      <%#   <a href="https://github.com/aranair" class="superheader__github-handle"> %>
+      <%#     <span>aranair</span> %>
+      <%#   </a> %>
+      <%# </div> %>
     </div>
     <div id="left_expl_container">
         <div id="left_explanatory">
@@ -18,9 +24,10 @@
     <div class="clear"></div>
     <div id="left_tagcloud_container" class="hidden-xs">
       <div id="left_tagcloud">
-        <p class="tagcloud_header"> Tag Cloud: </p>
+        <p class="tagcloud_header">TAG CLOUD</p>
         <% tag_cloud Article.tag_counts, %w{s m l} do |tag, css_class| %>
-          <%= link_to tag.name, tag_path(tag.name), class: css_class, :style => 'color:#999999' %>&nbsp;
+          <%= link_to tag.name, 
+            tag_path(tag.name), class: css_class %>
         <%end%>
       </div>
     </div>

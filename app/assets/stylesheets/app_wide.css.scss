@@ -60,11 +60,20 @@ span.fontsmall { font-size:0.8em }
   h1#superheader {
     color: #8e44ad;
     font-size:65px;
-    line-height:75px; 
-    padding-bottom:30px;
     font-weight:400 !important;
     text-shadow: 0 2px #fff;
-    a:hover { text-decoration:none; }
+    margin-bottom: 5px;
+    a:hover { text-decoration: none; }
+  }
+  .superheader__dev {
+    span {
+      font-size: 26px;
+      font-weight: 300;
+    }
+  }
+  .superheader__github-handle {
+    font-weight: 300;
+    font-size: 26px;
   }
 
   #left_explanatory {
@@ -78,6 +87,7 @@ span.fontsmall { font-size:0.8em }
   }
   #superheader_container {
     text-align:right;
+    margin-bottom: 20px;
   }
   #left_expl_container {
     text-align:right;
@@ -101,9 +111,9 @@ span.fontsmall { font-size:0.8em }
 
   .tagcloud_header {
     margin-top: 30px;
-    color: #333;
+    color: #9137B6;
+    font-weight: 300;
     font-size: 18px;
-    letter-spacing: -1px;
   }
 }
 
