@@ -1,17 +1,17 @@
 @media (max-width: 1020px) { 
+  .s_article_container .article-content .article-title {
+    font-size: 25px;
+  }
   #left_tagcloud {
     text-align: center;
     float: none;
     max-width: none;
   }
-  #right-panel {
-    display: none;
-  }
   #mid_container {
     margin-left:0px;
   }
   p {
-    font-size:16px;
+    font-size:14px;
   }
   #left_container {
     display:block;
@@ -25,10 +25,6 @@
     padding-bottom:35px;
 
     h1#superheader {
-      font-family:'Oswald', Arial, Helvetica, serif;
-      font-size:55px;
-      line-height:55px; 
-      padding-bottom:10px;
     }
 
     #superheader_container {
@@ -40,6 +36,7 @@
     #left_explanatory {
       max-width:300px;
       margin:auto;
+      font-size: 16px;
     }
   }
 }
@@ -50,15 +47,24 @@
 
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {
+  #left_container {
+    opacity: 1;
+  }
   #left_tagcloud {
     text-align: center;
     float: none;
     max-width: none;
   }
+  #right-panel {
+    display: none;
+  }
 }
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
+  #right-panel {
+    display: none;
+  }
   .s_article_container {
     padding:10px;
     padding-top:0px;

@@ -1,6 +1,6 @@
 <div class="article-content col-sm-12">
   <div class="article-content-header">
-    <h2 class="article-title"><%= @article.title %></h2>
+    <h1 class="article-title"><%= @article.title %></h1>
     <p class="article-time muted"><%= @article.created_at.in_time_zone('Singapore').strftime("%B %d at %I:%M %p") %></p>
   </div>
   <p> <%= markdown @article.body %> </p>
