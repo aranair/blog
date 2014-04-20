@@ -87,7 +87,7 @@ span.fontsmall { font-size:0.8em }
   }
   #superheader_container {
     text-align:right;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
   #left_expl_container {
     text-align:right;
@@ -100,12 +100,12 @@ span.fontsmall { font-size:0.8em }
 #left_tagcloud {
   float:right;
   max-width:230px;
-
   line-height: 1.6em;
+  font-weight: 300;
 
   .s { font-size: 0.7em; }
-  .m { font-size: 1.2em; }
-  .l { font-size: 1.4em; }
+  .m { font-size: 1.2em; color: #666; }
+  .l { font-size: 1.4em; color: #333; }
 
   a { color: #999; }
 
