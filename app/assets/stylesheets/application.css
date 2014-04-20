@@ -9,6 +9,13 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
- *= require_tree .
+ *= require app_wide
+ *= require articles
+ *= require articles_list
+ *= require left_panel
+ *= require right_panel
+ *= require pen
+ *= require navbar-amethyst
+ *= require bootstrap_overrides
  *= require_tree ./font
  */

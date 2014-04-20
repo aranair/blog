@@ -25,98 +25,10 @@ span.fontlight { font-weight:300; }
 span.fontsmaller { font-size:0.5em; }
 span.fontsmall { font-size:0.8em }
 
-#right-panel {
-  position:fixed;
-  bottom:0px;
-  right: 0px;
-  top:60px;
-  padding-top:10px;
-}
-
-.right-panel__circular-portrait {
-  width: 200px;
-	height: 200px;
-	border-radius: 150px;
-	-webkit-border-radius: 150px;
-	-moz-border-radius: 150px;
-  background: url(image_path('facebook-portrait.jpg')) no-repeat;
-  background-size: 200px auto;
-  box-shadow: 0 0 8px rgba(0, 0, 0, .5);
-  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .5);
-  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .5);
-  opacity: 0.7;
-}
-
 #epiceditor_container {
   min-height:400px;
   height:100%;
 }
-#left_container {
-  position:fixed;
-  bottom:0px;
-  top:60px;
-  padding-top:10px;
-
-  h1#superheader {
-    color: #8e44ad;
-    font-size:65px;
-    font-weight:400 !important;
-    text-shadow: 0 2px #fff;
-    margin-bottom: 5px;
-    a:hover { text-decoration: none; }
-  }
-  .superheader__dev {
-    span {
-      font-size: 26px;
-      font-weight: 300;
-    }
-  }
-  .superheader__github-handle {
-    font-weight: 300;
-    font-size: 26px;
-  }
-
-  #left_explanatory {
-    max-width:230px;
-    float:right;
-    font-family: 'Open Sans', Arial, Helvetica, serif;
-    font-weight:300;
-    font-size:18px;
-    line-height:25px;
-    color:#777;
-  }
-  #superheader_container {
-    text-align:right;
-    margin-bottom: 40px;
-  }
-  #left_expl_container {
-    text-align:right;
-  }
-}
-#left_tagcloud_container {
-  padding-top:20px;
-  text-align:right;
-}
-#left_tagcloud {
-  float:right;
-  max-width:230px;
-  line-height: 1.6em;
-  font-weight: 300;
-
-  .s { font-size: 0.7em; }
-  .m { font-size: 1.2em; color: #666; }
-  .l { font-size: 1.4em; color: #333; }
-
-  a { color: #999; }
-
-  .tagcloud_header {
-    margin-top: 30px;
-    color: #9137B6;
-    font-weight: 300;
-    font-size: 18px;
-  }
-}
-
 #mid_inner {
   position:relative;
 }
