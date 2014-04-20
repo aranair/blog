@@ -1,16 +1,11 @@
 // App wide css
 h1, h2, h3, h4, h5 {
-  font-family:'Oswald', Arial, Helvetica, serif !important;
+  font-family: 'Open Sans', Arial, Helvetica, serif !important;
   font-weight: 300 !important;
-}
-
-h3, h4, h5 {
-  // font-family:'Open Sans', Arial, Helvetica, serif !important;
 }
 
 body {
   font-family:'Open Sans', Arial, Helvetica, serif !important;
-  // background: url(image_path('bg-texture.jpg'));
   padding-top: 50px;
 }
 .btn { border-radius: 0; }
@@ -39,6 +34,7 @@ span.fontsmall { font-size:0.8em }
   margin-left:27%;
   max-width:1000px;
   padding:0px;
+  padding-bottom: 10px;
 }
 
 #top_container {

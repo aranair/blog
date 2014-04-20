@@ -11,10 +11,16 @@
     margin-bottom: 30px;
 
     .article-title {
-      font-family: 'Open Sans', Arial, Helvetica, serif;
+      font-family: 'Open Sans', Arial, Helvetica, serif !important;
       font-weight: 300;
-      margin-top: 10px;
-      color:#333;
+      margin-top: 0px;
+      color: #9137B6;
+    }
+
+    .article-content-header {
+      padding-bottom: 10px;
+      border-bottom: 1px solid #e7e7e7;
+      margin-bottom: 20px;
     }
   }
   .article-actions {
@@ -23,7 +29,7 @@
   }
   .article-tags {
     padding-left: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
   }
 }
 
