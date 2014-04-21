@@ -77,6 +77,11 @@
   }
   h1#superheader {
     font-size: 45px !important;
+
+    span.pre-header {
+      font-size: 49px !important;
+      line-height: 40px !important;
+    }
   }
   .superheader__dev {
     span { font-size: 18px !important; }

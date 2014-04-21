@@ -15,10 +15,18 @@
     text-shadow: 0 2px #fff;
     margin-bottom: 5px;
     a:hover { text-decoration: none; }
+
+    .pre-header {
+      font-size: 71px;
+      line-height: 70px;
+      font-family: 'Open Sans';
+      font-weight: 100;
+      color: rgba(142, 68, 173, 0.7);
+    }
   }
   .superheader__dev {
     span {
-      font-size: 26px;
+      font-size: 23px;
       font-weight: 300;
     }
   }
