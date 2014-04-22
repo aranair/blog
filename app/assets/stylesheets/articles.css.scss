@@ -4,6 +4,7 @@
 
 .s_article_container {
   width: 100%;
+  padding-top: 30px;
 
   .article-content {
     margin-bottom: 30px;
@@ -23,6 +24,7 @@
     }
   }
   .article-actions {
+    border-top: 1px solid #e7e7e7;
     a { color: #999; }
     padding: 10px 20px 0px 30px;
   }
