@@ -1,35 +1,33 @@
-@media (max-width: 980px) { 
+@media (max-width: 991px) { 
   .s_article_container .article-content .article-title {
     font-size: 25px;
   }
-  #mid_container {
+  .mid-panel {
     margin-left:0px;
     border-top: 1px solid #e7e7e7;
   }
   p {
     font-size:14px;
   }
-  #left_container {
-    display:block;
-    width:100%;
-    margin:auto;
-    position:relative;
+  .left-panel {
+    display: block;
+    width: 100%;
+    margin: auto;
+    position: relative;
     top: 0px;
-    padding: 0px;
-    padding-top: 10px;
+    text-align: center;
+    border-right: 0px;
+    padding: 0px 0px 35px 0px;
+  }
+  .superheader__container {
     text-align:center;
-    border-right:0px;
-    padding-bottom:35px;
-
-    #superheader_container {
-      text-align:center;
-    }
-    #left_expl_container, #left_explanatory {
-      max-width: 300px;
-      margin: auto;
-      text-align:center;
-      font-size: 16px;
-    }
+  }
+  .left-panel__explain-text {
+    float: none;
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-size: 16px;
   }
 }
 
@@ -38,11 +36,8 @@
 }
 
 /* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 979px) {
-  #right-panel {
-    display: none;
-  }
-  #left_tagcloud {
+@media (min-width: 768px) and (max-width: 991px) {
+  .tagcloud {
     text-align: center;
     float: none;
     max-width: none;
@@ -51,16 +46,13 @@
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
-  #left_container {
+  .left-panel {
     opacity: 1;
   }
-  #right-panel {
-    display: none;
-  }
-  #superheader_container {
+  .superheader__container {
     margin-bottom: 0px !important;
   }
-  #mid_container {
+  .mid-panel {
     padding: 0px;
     padding-right: 15px;
   }
@@ -75,18 +67,18 @@
     padding-right: 0px;
     padding-top:0px;
   }
-  h1#superheader {
+  .superheader__intro {
     font-size: 45px !important;
-
-    span.pre-header {
-      font-size: 49px !important;
-      line-height: 40px !important;
-    }
   }
-  .superheader__dev {
+
+  .superheader__intro-hi {
+    font-size: 30px !important;
+  }
+  .superheader__intro-fullstack {
     span { font-size: 18px !important; }
   }
-  #left_explanatory {
+
+  .left-panel__explain-text {
     display: none;
   }
   li.article-list-item{

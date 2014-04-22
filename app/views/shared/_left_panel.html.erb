@@ -1,36 +1,25 @@
-<div id="left_container" class="col-md-3">
-    <div id ="superheader_container"> 
-      <h1 id="superheader">
-        <span class="pre-header accent_amethyst">HI, I'M</span></br>
+<div class="left-panel">
+    <div class="superheader__container"> 
+      <h1 class="superheader__intro">
+        <span class="superheader__intro-hi accent_amethyst">HI THERE, I'M</span></br>
         <a href=<%= root_path %> class="accent_amethyst">
           <span class="accent_amethyst">HOMAN</span>
         </a>
       </h1>
-      <div class="superheader__dev">
+      <div class="superheader__intro-fullstack">
         <span>A FULL STACK DEV</span>
       </div>
-      <%# <div class="superheader__github"> %>
-      <%#   <a href="https://github.com/aranair" class="superheader__github-handle"> %>
-      <%#     <span>aranair</span> %>
-      <%#   </a> %>
-      <%# </div> %>
     </div>
-    <div id="left_expl_container" class="<%= transparency_class %>">
-        <div id="left_explanatory">
-          A personal tech blog of my lessons and experience 
-          with Rails, VIM, Meteor, Ember, yadayada 
-          and all things technical and fun.
-        </div>
+    <div class="left-panel__explain-text <%= transparency_class %>">
+        And this is a personal tech blog of my lessons and experience 
+        with Rails, VIM, Meteor, Ember yadayada 
+        and all things technical and fun.
     </div>
-    <div class="clear"></div>
-    <div id="left_tagcloud_container" class="hidden-xs <%= transparency_class %>">
-      <div id="left_tagcloud">
-        <p class="tagcloud_header">TAG CLOUD</p>
-        <% tag_cloud Article.tag_counts, %w{s m l} do |tag, css_class| %>
-          <%= link_to tag.name, 
-            tag_path(tag.name), class: css_class %>
-        <%end%>
-      </div>
+    <div class="tagcloud hidden-sm hidden-xs <%= transparency_class %>">
+      <p class="tagcloud__header">TAG CLOUD</p>
+      <% tag_cloud Article.tag_counts, %w{s m l} do |tag, css_class| %>
+        <%= link_to tag.name, 
+          tag_path(tag.name), class: css_class %>
+      <%end%>
     </div>
-    <div class="clear"></div>
 </div>

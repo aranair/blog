@@ -1,62 +1,60 @@
-#left_container {
+.left-panel {
   background: white;
-  position:fixed;
+  position: fixed;
+  width: 25%;
   bottom:0px;
   top: 0px;
-  padding-top: 80px;
-  padding-right: 30px;
+  padding: 60px 30px 0px 0px;
   border-right:1px solid #e7e7e7;
+}
 
-  h1#superheader {
-    color: #8e44ad;
-    font-size:65px;
-    font-family: 'Oswald', Arial, Helvetica, serif !important;
-    font-weight:400 !important;
-    text-shadow: 0 2px #fff;
-    margin-bottom: 5px;
-    a:hover { text-decoration: none; }
+.left-panel__explain-text {
+  max-width: 245px;
+  float: right;
+  font-family: 'Open Sans', Arial, Helvetica, serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  color: #777;
+  text-align: right;
+  display: block;
+}
 
-    .pre-header {
-      font-size: 71px;
-      line-height: 70px;
-      font-family: 'Open Sans';
-      font-weight: 100;
-      color: rgba(142, 68, 173, 0.7);
-    }
-  }
-  .superheader__dev {
-    span {
-      font-size: 23px;
-      font-weight: 300;
-    }
-  }
-  .superheader__github-handle {
+.superheader__container {
+  text-align:right;
+  margin-bottom: 40px;
+}
+
+.superheader__intro-fullstack {
+  span {
+    font-size: 23px;
     font-weight: 300;
-    font-size: 26px;
-  }
-
-  #left_explanatory {
-    max-width:230px;
-    float:right;
-    font-family: 'Open Sans', Arial, Helvetica, serif;
-    font-weight:300;
-    font-size:18px;
-    line-height:25px;
-    color:#777;
-  }
-  #superheader_container {
-    text-align:right;
-    margin-bottom: 40px;
-  }
-  #left_expl_container {
-    text-align:right;
   }
 }
-#left_tagcloud_container {
+
+.superheader__intro {
+  color: #8e44ad;
+  font-size: 65px;
+  font-family: 'Oswald', Arial, Helvetica, serif !important;
+  font-weight: 400 !important;
+  text-shadow: 0 2px #fff;
+  margin-bottom: 5px;
+  a:hover { text-decoration: none; }
+}
+
+.superheader__intro-hi {
+  font-size: 36.5px;
+  line-height: 30px;
+  font-family: 'Jura', Arial, Helvetica, serif !important;
+  font-weight: 300;
+  // color: rgba(142, 68, 173, 0.7);
+}
+
+// Tag Cloud Start
+
+.tagcloud {
   padding-top:20px;
   text-align:right;
-}
-#left_tagcloud {
   float:right;
   max-width:230px;
   line-height: 1.6em;
@@ -67,12 +65,12 @@
   .l { font-size: 1.4em; color: #333; }
 
   a { color: #999; }
+}
 
-  .tagcloud_header {
-    margin-top: 30px;
-    color: #9137B6;
-    font-weight: 300;
-    font-size: 18px;
-  }
+.tagcloud__header {
+  margin-top: 30px;
+  color: #9137B6;
+  font-weight: 300;
+  font-size: 18px;
 }
 

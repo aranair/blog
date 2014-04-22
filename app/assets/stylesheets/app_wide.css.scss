@@ -29,14 +29,12 @@ span.fontsmall { font-size:0.8em }
   min-height:400px;
   height:100%;
 }
-#mid_inner {
-  position:relative;
-}
-#mid_container {
-  display:block;
+
+.mid-panel {
+  display: block;
   margin-left: 25%;
-  max-width:1000px;
-  padding: 0;
+  max-width: 1000px;
+  padding: 0 !important;
 }
 
 #top_container {
