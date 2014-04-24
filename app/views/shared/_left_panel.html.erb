@@ -15,11 +15,19 @@
         with Rails, VIM, Meteor, Ember yadayada 
         and all things technical and fun.
     </div>
-    <div class="tagcloud hidden-sm hidden-xs <%= transparency_class %>">
-      <p class="tagcloud__header">TAG CLOUD</p>
-      <% tag_cloud Article.tag_counts, %w{s m l} do |tag, css_class| %>
-        <%= link_to tag.name, 
-          tag_path(tag.name), class: css_class %>
-      <%end%>
+    <div class="clear"></div>
+    <div class="left-panel__contact-me <%= transparency_class %>">
+      <a href="http://sg.linkedin.com/in/boahoman" class="left-panel__social-links">
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-circle fa-stack-2x fa-amethyst"></i>
+          <i class="fa fa-linkedin fa-inverse fa-stack-1x"></i>
+        </span>
+      </a>
+      <a href="http://github.com/aranair" class="left-panel__social-links">
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-circle fa-stack-2x fa-amethyst"></i>
+          <i class="fa fa-github fa-inverse fa-stack-1x"></i>
+        </span>
+      </a>
     </div>
 </div>

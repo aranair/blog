@@ -4,8 +4,24 @@
   width: 25%;
   bottom:0px;
   top: 0px;
-  padding: 60px 30px 0px 0px;
+  padding: 80px 30px 0px 0px;
   border-right:1px solid #e7e7e7;
+}
+
+.left-panel__headers {
+  margin-top: 30px;
+  color: #9137B6;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.left-panel__contact-me {
+  margin-top: 20px;
+  float: right;
+}
+
+.left-panel__social-links {
+  float: right;
 }
 
 .left-panel__explain-text {
@@ -61,8 +77,7 @@
 
 .tagcloud {
   padding-top:20px;
-  text-align:right;
-  float:right;
+  text-align: left;
   max-width:230px;
   line-height: 1.6em;
   font-weight: 300;
@@ -80,4 +95,3 @@
   font-weight: 300;
   font-size: 18px;
 }
-

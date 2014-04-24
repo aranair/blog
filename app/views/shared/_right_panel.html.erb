@@ -1,4 +1,11 @@
 <div class="right-panel hidden-xs hidden-sm">
+  <div class="tagcloud hidden-sm hidden-xs <%= transparency_class %>">
+    <p class="tagcloud__header">TAG CLOUD</p>
+    <% tag_cloud Article.tag_counts, %w{s m l} do |tag, css_class| %>
+      <%= link_to tag.name, 
+        tag_path(tag.name), class: css_class %>
+    <%end%>
+  </div>
   <div class="<%= transparency_class %>">
     <p class="right-panel__headers">OTHERS</p>
     <ul class="right-panel__projects-list">
@@ -8,20 +15,5 @@
       <li><a href="http://snippy-homan.herokuapp.com">Snippy (on Heroku)</a></li>
       <li><a href="http://ajensha.biz">Ajensha Consulting</a></li>
     </ul>
-  </div>
-  <div class="<%= transparency_class %>">
-    <p class="right-panel__headers">CONTACT ME</p>
-    <a href="http://sg.linkedin.com/in/boahoman" class="right-panel__social-links">
-      <span class="fa-stack fa-lg">
-        <i class="fa fa-circle fa-stack-2x fa-amethyst"></i>
-        <i class="fa fa-linkedin fa-inverse fa-stack-1x"></i>
-      </span>
-    </a>
-    <a href="http://github.com/aranair" class="right-panel__social-links">
-      <span class="fa-stack fa-lg">
-        <i class="fa fa-circle fa-stack-2x fa-amethyst"></i>
-        <i class="fa fa-github fa-inverse fa-stack-1x"></i>
-      </span>
-    </a>
   </div>
 </div>
