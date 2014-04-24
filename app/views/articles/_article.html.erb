@@ -1,10 +1,11 @@
-<div class="article-content col-sm-12">
+<div class="article-content col-xs-12">
   <div class="article-content-header">
-    <h1 class="article-title"><%= @article.title %></h1>
+    <p class="article-title"><%= @article.title %></p>
     <p class="article-time muted"><%= @article.created_at.in_time_zone('Singapore').strftime("%B %d at %I:%M %p") %></p>
   </div>
   <p> <%= markdown @article.body %> </p>
 </div>
+<div class="clear"></div>
 <div class="article-tags col-sm-12">
   <span class="muted">Tags: </span><%= raw @article.tags.map(&:name).map { |t| link_to t, tag_path(t) }.join(', ') %>
 </div>

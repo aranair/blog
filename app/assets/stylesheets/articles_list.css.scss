@@ -10,11 +10,12 @@ li.article-list-item {
   border-bottom:1px solid #e7e7e7;
 
   .article-title {
-    font-family: 'Open Sans', Arial, Helvetica, serif;
     font-size: 18px;
-    line-height: 25px;
+    font-family: 'Montserrat', Arial, Helvetica, serif !important;
     font-weight: 300;
+    line-height: 25px;
     color: #9137B6;
+    color: #42005E;
   }
   a.article-list-edit {
     position: absolute;

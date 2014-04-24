@@ -36,10 +36,16 @@
 }
 /* Large desktop */
 @media (min-width: 1200px) {
+  .right-panel {
+    width: 33%;
+  }
 }
 
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 991px) {
+  .mid-panel .article-content {
+    margin-left: 20%;
+  }
   .tagcloud {
     text-align: center;
     float: none;
