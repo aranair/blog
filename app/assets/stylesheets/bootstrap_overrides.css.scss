@@ -36,6 +36,21 @@
   }
 }
 
+@media (min-width: 991px) {
+  .navbar {
+    width: 25%;
+  }
+  .navbar-header {
+    float: right !important;
+    margin-right: 20px;
+  }
+  .mid-panel {
+    margin-top: -50px;
+  }
+  .navbar-amethyst {
+    background: none;
+  }
+}
 /* Large desktop */
 @media (min-width: 1200px) {
 }

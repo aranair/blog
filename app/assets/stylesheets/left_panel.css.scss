@@ -1,5 +1,6 @@
 .left-panel {
   background: white;
+  background-color: #9b59b6;
   position: fixed;
   width: 25%;
   bottom:0px;
@@ -30,7 +31,7 @@
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
-  color: #999;
+  color: white;
   text-align: right;
   display: block;
 }
@@ -42,6 +43,7 @@
 
 .superheader__intro-fullstack {
   font-family: 'Jura', Arial, Helvetica, serif !important;
+  color: white;
   margin-right: 5px;
   margin-top: -10px;
   span {
@@ -53,15 +55,19 @@
 .superheader__intro {
   color: #8e44ad;
   font-family: 'Jura', Arial, Helvetica, serif !important;
-  text-shadow: 0 2px #fff;
-  margin-bottom: 5px;
   a:hover { text-decoration: none; }
 }
 
 .superheader__intro-name {
   font-weight: 600 !important;
   font-size: 65px;
-  color: #8e44ad;
+  // text-shadow: 0 2px #fff;
+  margin-bottom: 5px;
+  // color: #8e44ad;
+  color: white;
+  &:hover {
+    color: rgb(23, 246, 255);
+  }
 }
 
 .superheader__intro-hi {
@@ -76,9 +82,9 @@
 // Tag Cloud Start
 
 .tagcloud {
-  padding-top:20px;
+  padding-top: 0px;
   text-align: left;
-  max-width:230px;
+  max-width: 230px;
   line-height: 1.6em;
   font-weight: 300;
 

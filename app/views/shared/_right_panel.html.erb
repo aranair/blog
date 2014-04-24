@@ -1,4 +1,15 @@
 <div class="right-panel hidden-xs hidden-sm">
+  <div class="visible-lg visible-md">
+    <p class="tagcloud__header">Controls</p>
+    <ul class="right-panel__large-controls">
+      <% if user_signed_in? %>
+        <li> <%= link_to 'New Article', new_article_path %> </li>
+        <li> <%= link_to('Logout', destroy_user_session_path, :method => :delete) %></li>
+      <% else %>
+        <li> <%= link_to('Login', new_user_session_path) %> </li>
+      <% end %>
+    </ul>
+  </div>
   <div class="tagcloud hidden-sm hidden-xs <%= transparency_class %>">
     <p class="tagcloud__header">TAG CLOUD</p>
     <% tag_cloud Article.tag_counts, %w{s m l} do |tag, css_class| %>

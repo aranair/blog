@@ -12,7 +12,7 @@
 .right-panel__projects-list { 
   list-style: none; 
   margin-left: 0;
-  padding-left: 5px;
+  padding-left: 0px;
   font-family: 'Open Sans', Arial, Helvetica, serif;
   font-weight: 300;
   font-size: 14px;
@@ -41,6 +41,18 @@
 }
 
 .right-panel__social-links {
+}
+
+.right-panel__large-controls {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.right-panel__large-controls li {
+  a {
+    font-weight: 300;
+    letter-spacing: 1px;
+  }
 }
 
 a:hover .fa-amethyst { 
