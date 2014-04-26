@@ -43,15 +43,27 @@
 .right-panel__social-links {
 }
 
-.right-panel__large-controls {
+.right-panel__controls:after {
+  clear: both;
+  content: " ";
+  display: table;
+}
+.right-panel__controls-list {
+  list-style: none;
   margin: 0;
   padding: 0;
-  list-style: none;
 }
-.right-panel__large-controls li {
-  a {
-    font-weight: 300;
-    letter-spacing: 1px;
+.right-panel__controls-list > li > a {
+  background: #428bca;
+  padding: 15px 20px;
+  margin-right: 10px;
+  float: left;
+  color: white;
+
+  &:hover {
+    text-decoration: none; 
+    cursor: pointer;
+    background: #1E598B;
   }
 }
 

@@ -1,7 +1,6 @@
 <div class="right-panel hidden-xs hidden-sm">
-  <div class="visible-lg visible-md">
-    <p class="tagcloud__header">CONTROLS</p>
-    <ul class="right-panel__large-controls">
+  <div class="<%= transparency_class %> right-panel__controls visible-lg visible-md">
+    <ul class="right-panel__controls-list">
       <% if user_signed_in? %>
         <li> <%= link_to 'New Article', new_article_path %> </li>
         <li> <%= link_to('Logout', destroy_user_session_path, :method => :delete) %></li>
