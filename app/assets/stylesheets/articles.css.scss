@@ -55,5 +55,15 @@
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', Arial, Helvetica, serif !important;
   }
-  code { white-space: pre-wrap; }
+  pre {
+    white-space: normal;
+    overflow: auto;
+    word-break: normal;
+    word-wrap: normal;
+  }
+  code { 
+    white-space: pre; 
+    display: block;
+    width: 100%;
+  }
 }
