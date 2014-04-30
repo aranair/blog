@@ -26,10 +26,12 @@
 }
 
 .left-panel__explain-text {
-  max-width: 220px;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  max-width: 230px;
   float: right;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 24px;
   color: white;
   text-align: right;
@@ -59,6 +61,8 @@
 }
 
 .superheader__intro-name {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
   font-weight: 600 !important;
   font-size: 65px;
   // text-shadow: 0 2px #fff;

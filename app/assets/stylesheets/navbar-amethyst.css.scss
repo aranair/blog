@@ -7,7 +7,7 @@
 }
 .navbar-amethyst .navbar-brand:hover,
 .navbar-amethyst .navbar-brand:focus {
-  color: #e6e6e6;
+  color: black;
   background-color: transparent;
 }
 .navbar-amethyst .navbar-text {
@@ -20,7 +20,8 @@
 }
 .navbar-amethyst .navbar-nav > li > a:hover,
 .navbar-amethyst .navbar-nav > li > a:focus {
-  color: #ffffff;
+  color: black;
+  // color: #ffffff;
   background-color: transparent;
 }
 .navbar-amethyst .navbar-nav > .active > a,
