@@ -37,6 +37,7 @@ GEM
       xpath (~> 2.0)
     celluloid (0.15.2)
       timers (~> 1.1.0)
+    chartkick (1.2.4)
     chunky_png (1.2.9)
     coderay (1.1.0)
     coffee-rails (4.0.1)
@@ -68,6 +69,8 @@ GEM
     ffi (1.9.3)
     formatador (0.2.4)
     fssm (0.2.10)
+    groupdate (2.1.1)
+      activerecord (>= 3.0.0)
     guard (2.3.0)
       formatador (>= 0.2.4)
       listen (~> 2.1)
@@ -191,14 +194,15 @@ PLATFORMS
 
 DEPENDENCIES
   capybara
+  chartkick
   coffee-rails (~> 4.0.0)
   compass-rails (~> 1.1.2)
   devise (~> 3.0.0.rc)
   factory_girl_rails
+  groupdate
   guard-rspec
   jbuilder (~> 1.0.1)
   jquery-rails
-  nokogiri
   pg
   pygments.rb (~> 0.5.4)
   rails (~> 4.0.2)
