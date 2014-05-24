@@ -56,7 +56,9 @@
     font-family: 'Montserrat', Arial, Helvetica, serif !important;
   }
   pre {
-    white-space: normal;
+    background: white;
+    border-radius: 0px;
+    border-color: rgba(194, 190, 190, 0.46);
     overflow: auto;
     word-break: normal;
     word-wrap: normal;

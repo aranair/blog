@@ -10,6 +10,7 @@
  *
  *= require_self
  *= require app_wide
+ *= require github_pygments
  *= require articles
  *= require articles_list
  *= require left_panel

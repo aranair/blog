@@ -16,7 +16,8 @@ module ApplicationHelper
   end
 
   def markdown(text)
-    renderer = Redcarpet::Render::HTML.new(hard_wrap: true, filter_html: false)
+    # renderer = Redcarpet::Render::HTML.new
+    renderer = Pygmentizer
     options = {
       filter_html: false,
       hard_wrap: true,
@@ -25,8 +26,17 @@ module ApplicationHelper
       fenced_code_blocks: true,
       lax_html_blocks: true,
       strikethrough: true,
-      superscript: true
+      superscript: true,
+      tables: true
     }
     Redcarpet::Markdown.new(renderer, options).render(text).html_safe
   end
+
+  def syntax_highlighter(html)  
+    doc = Nokogiri::HTML(html)  
+    doc.search("//code[@class]").each do |code|  
+      code.replace Pygments.highlight(code.text, lexer: code[:class])  
+    end  
+    doc.to_s  
+  end  
 end

@@ -7,6 +7,8 @@ gem 'sass-rails', '~> 4.0.0'
 gem 'coffee-rails', '~> 4.0.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'redcarpet'
+gem 'nokogiri'
+gem 'pygments.rb', '~> 0.5.4'
 
 gem 'jquery-rails'
 
