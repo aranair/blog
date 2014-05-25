@@ -27,6 +27,6 @@
     </ul>
   </div>
   <div class="<%= transparency_class %> right-panel__line-chart">
-    <%= line_chart Article.group_by_day(:created_at).count %>
+    <%= line_chart Article.group_by_month(:created_at).count %>
   </div>
 </div>
