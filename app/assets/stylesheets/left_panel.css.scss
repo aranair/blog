@@ -44,33 +44,34 @@
 }
 
 .superheader__intro-fullstack {
-  font-family: 'Jura', Arial, Helvetica, serif !important;
-  color: white;
-  margin-right: 5px;
+  font-family: 'Josefin Sans', 'Jura', Arial, Helvetica, serif !important;
+  color: rgb(241, 216, 255);
   margin-top: -10px;
   span {
-    font-size: 21px;
+    font-size: 18px;
     font-weight: 300;
   }
 }
 
 .superheader__intro {
   color: #8e44ad;
-  font-family: 'Jura', Arial, Helvetica, serif !important;
+  font-family: 'Josefin Sans', 'Jura', Arial, Helvetica, serif !important;
   a:hover { text-decoration: none; }
 }
 
 .superheader__intro-name {
+  letter-spacing: -6px;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-  font-weight: 600 !important;
-  font-size: 65px;
-  // text-shadow: 0 2px #fff;
+  font-weight: 700 !important;
+  font-size: 55px;
+  text-shadow: 2px 3px #6D447E;
   margin-bottom: 5px;
   // color: #8e44ad;
   color: white;
+  color: rgb(241, 216, 255);
   &:hover {
-    color: black;
+    color: white;
   }
 }
 
