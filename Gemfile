@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.1-head'
+ruby '2.1.6'
 gem 'rails', '~> 4.0.2'
 
 gem "compass-rails", "~> 1.1.2"
