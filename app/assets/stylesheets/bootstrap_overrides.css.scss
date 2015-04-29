@@ -39,6 +39,9 @@
 }
 
 @media (min-width: 991px) {
+  .s_article_container .article-content {
+    max-width: none;
+  }
   .navbar {
     width: 25%;
   }
