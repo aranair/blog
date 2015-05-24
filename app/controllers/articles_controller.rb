@@ -6,6 +6,7 @@ class ArticlesController < ApplicationController
   # GET /articles
   def index
     if params[:tag]
+      @react_params = params[:tag]
       @articles = Article.tagged_with(params[:tag]).order(created_at: :desc)
     else
      @articles = Article.all.order(created_at: :desc)

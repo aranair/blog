@@ -10,6 +10,7 @@ var ArticleBox = React.createClass({
   componentDidMount: function() {
     $.ajax({
       url: this.props.url,
+      data: "tag="+this.props.react_params,
       dataType: 'json',
       cache: false,
       success: function(data) {

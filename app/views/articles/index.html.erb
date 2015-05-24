@@ -3,7 +3,7 @@
   <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
 </div>
 <% end %>
-<%= react_component('ArticleBox', url: 'articles.json') %>
+<%= react_component('ArticleBox', url: '/articles.json', react_params: @react_params) %>
 <%# <ul class="articles-list"> %>
 <%#   <% @articles.each do |article| %1> %>
 <%#     <li class="article-list-item"> %>
