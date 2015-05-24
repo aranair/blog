@@ -3,18 +3,19 @@
   <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
 </div>
 <% end %>
-<ul class="articles-list">
-  <% @articles.each do |article| %>
-    <li class="article-list-item">
-      <a href=<%= article_path(article) %> class="article-link">
-        <p class="article-title"><%= article.title %></p>
-        <p class="article-time muted"><%= article.created_at.in_time_zone('Singapore').strftime("%B %d at %I:%M %p") %></p>
-      </a>
-      <% if user_signed_in? %>
-        <a href=<%= edit_article_path(article) %> class="article-list-edit">
-          <span>Edit</span>
-        </a>
-      <% end %>
-    </li>
-  <% end %>
-</ul>
+<%= react_component('ArticleBox', url: 'articles.json') %>
+<%# <ul class="articles-list"> %>
+<%#   <% @articles.each do |article| %1> %>
+<%#     <li class="article-list-item"> %>
+<%#       <a href=<%= article_path(article) %1> class="article-link"> %>
+<%#         <p class="article-title"><%= article.title %1></p> %>
+<%#         <p class="article-time muted"><%= article.created_at.in_time_zone('Singapore').strftime("%B %d at %I:%M %p") %1></p> %>
+<%#       </a> %>
+<%#       <% if user_signed_in? %1> %>
+<%#         <a href=<%= edit_article_path(article) %1> class="article-list-edit"> %>
+<%#           <span>Edit</span> %>
+<%#         </a> %>
+<%#       <% end %1> %>
+<%#     </li> %>
+<%#   <% end %1> %>
+<%# </ul> %>
