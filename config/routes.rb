@@ -1,4 +1,5 @@
 Blog::Application.routes.draw do
+
   devise_for :users
   resources :articles
   get 'tags/:tag', to: 'articles#index', as: :tag
