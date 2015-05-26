@@ -4,7 +4,6 @@ gem 'rails', '~> 4.0.2'
 
 gem "compass-rails", "~> 1.1.2"
 gem 'sass-rails', '~> 4.0.0'
-# gem 'coffee-rails', '~> 4.0.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'redcarpet'
 gem 'pygments.rb', '~> 0.5.4'
@@ -15,12 +14,6 @@ gem 'groupdate'
 gem 'jquery-rails'
 gem 'react-rails', '~> 1.0'
 
-# group :production do 
-  # gem 'rails_log_stdout',           github: 'heroku/rails_log_stdout'
-  # gem 'rails3_serve_static_assets', github: 'heroku/rails3_serve_static_assets'
-# end
-
-# gem 'ckeditor'
 gem 'devise', '~> 3.0.0.rc'
 gem 'pg'
 
