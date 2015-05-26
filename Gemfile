@@ -28,6 +28,7 @@ gem 'pg'
 gem 'jbuilder', '~> 1.2'
 gem 'rails_12factor', group: :production
 gem "rspec-rails", :group => [:test, :development]
+
 group :test do
   gem "factory_girl_rails"
   gem "capybara"
