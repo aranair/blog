@@ -15,6 +15,7 @@
  *= require articles_list
  *= require left_panel
  *= require right_panel
+ *= require top_panel
  *= require pen
  *= require navbar-amethyst
  *= require bootstrap_overrides
