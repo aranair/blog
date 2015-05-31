@@ -4,12 +4,15 @@
   .s_article_container .article-content .article-title {
     font-size: 25px;
   }
+  .s_article_container .article-content{
+    max-width: 550px;
+    &.article-title {
+      font-size: 25px;
+    }
+  }
   .mid-panel {
     margin-left:0px;
     border-top: 1px solid #e7e7e7;
-  }
-  p {
-    font-size:14px;
   }
   .left-panel {
     display: block;
