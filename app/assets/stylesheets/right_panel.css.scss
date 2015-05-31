@@ -71,10 +71,12 @@
   margin-left: -30px;
 }
 
-a:hover .fa-amethyst { 
+a:hover i.fa-amethyst { 
   // color: #428bca;
   // color: #9b59b6;
+  color: rgba(255, 255, 255, 0.15);
 }
-// .fa-amethyst {
-//   color: #9b59b6;
-// }
+i.fa-amethyst {
+  // color: #9b59b6;
+  color: rgba(255, 255, 255, 0.10);
+}
