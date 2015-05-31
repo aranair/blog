@@ -14,7 +14,8 @@
 
     .article-title {
       font-size: 26px;
-      line-height: 35px;
+      line-height: 25px;
+      margin-bottom: 5px;
       font-family: 'Montserrat', Arial, Helvetica, serif !important;
       font-weight: 300;
       color: #9137B6;
@@ -23,8 +24,11 @@
 
     .article-content-header {
       margin-top: 10px;
-      padding-bottom: 10px;
     }
+    
+    h3 { margin-top: 40px; }
+    p { margin: 0 0 30px; }
+    pre { margin: 0 0 30px; }
   }
   .article-actions {
     border-top: 1px solid #e7e7e7;
