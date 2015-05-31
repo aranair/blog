@@ -6,7 +6,7 @@
   top: 0px;
   padding: 30px 0px 0px 30px;
   border-left: 1px solid #e7e7e7;
-  width: 26%;
+  width: 34%;
 }
 
 .right-panel__projects-list { 
@@ -71,12 +71,10 @@
   margin-left: -30px;
 }
 
-a:hover i.fa-amethyst { 
+a:hover .fa-amethyst { 
   // color: #428bca;
   // color: #9b59b6;
-  color: rgba(255, 255, 255, 0.15);
 }
-i.fa-amethyst {
-  // color: #9b59b6;
-  color: rgba(255, 255, 255, 0.10);
-}
+// .fa-amethyst {
+//   color: #9b59b6;
+// }
